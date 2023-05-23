@@ -22,7 +22,7 @@ export default function SingleFaq(props) {
         className="flex flex-row justify-center justify-between h-full w-full items-center"
         onClick={handleClick}
       >
-        <div className="my-3 mr-2 text-left flex flex-row font-bold">
+        <div className="my-3 mr-2 text-left flex flex-row font-semibold">
           <Question></Question>
           {props.title}
         </div>
