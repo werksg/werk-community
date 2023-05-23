@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    exportPathMap: async function () {
+    target: 'serverless',
+    generateStaticPaths: async function () {
       return {
         '/': { page: '/' },
       };
@@ -8,3 +9,4 @@ const nextConfig = {
   };
   
   module.exports = nextConfig;
+  
