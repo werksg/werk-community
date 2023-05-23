@@ -25,7 +25,7 @@ export default function Banner() {
     <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-1 md:h-screen">
       <BaseDialog show={dialog} onClose={handleClosePopup}/>
       <div className="flex flex-row items-center justify-between md:order-last">
-        <Image
+        <img
           className="w-3/4 h-3/4 mx-auto"
           src="https://download.werk.sg/assets/werkApp-321478e1.svg"
           alt="werkApp"
@@ -68,19 +68,21 @@ export default function Banner() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-x-3 md:space-y-0 mt-6">
           <div className="w-40 bg-black rounded-md p-1 hover:scale-110">
             <a href="https://apps.apple.com/sg/app/werk-sg/id6445880985">
-              <Image
+              <img
                 className="object-cover"
-                src="https://download.werk.sg/assets/apple_store-f2829741.png"
+                src="https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/apple_store-button.png"
                 alt="apple"
+                
               />
             </a>
           </div>
           <div className="w-40 bg-black rounded-md p-1 hover:scale-110">
             <a href="https://play.google.com/store/apps/details?id=com.werkapp">
-              <Image
+              <img
                 className="object-cover"
-                src="https://download.werk.sg/assets/google-play-135af070.png"
+                src="https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/google-play-button.png"
                 alt="google"
+                
               />
             </a>
           </div>

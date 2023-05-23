@@ -7,10 +7,11 @@ export default function Navbar() {
         <div>
           <div class="mr-4">
             <a class="mr-6 flex items-center space-x-2" href="/">
-              <Image
+              <img
                 className="w-20"
-                src="https://github.com/werksg/email_signature_pack/blob/main/werkLogo.png?raw=true"
+                src="https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/werkLogo.png"
                 alt="werk_logo"
+                
               />
             </a>
           </div>
