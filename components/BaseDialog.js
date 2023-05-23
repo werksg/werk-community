@@ -7,7 +7,7 @@ export default function BaseDialog(props) {
   let [isOpen, setIsOpen] = useState(show);
 
   function handleClick() {
-    console.log("Button clicked");
+    
     setIsOpen(false);
     onClose(false); // Invoke the callback function to update the prop value
   }

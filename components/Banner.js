@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import BaseDialog from './BaseDialog';
 import { useEffect } from "react";
@@ -8,7 +8,7 @@ export default function Banner() {
   const [dialog,setDialog]=React.useState(false)
   
   useEffect(() => {
-    console.log(dialog);
+    
   }, [dialog]);
 
   function handleClick(){
@@ -25,7 +25,7 @@ export default function Banner() {
     <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-1 md:h-screen">
       <BaseDialog show={dialog} onClose={handleClosePopup}/>
       <div className="flex flex-row items-center justify-between md:order-last">
-        <img
+        <Image
           className="w-3/4 h-3/4 mx-auto"
           src="https://download.werk.sg/assets/werkApp-321478e1.svg"
           alt="werkApp"
@@ -42,7 +42,7 @@ export default function Banner() {
         </div>
         <div className="mt-4 mb-3">
           Simply list the services you wish to provide, and let the magic of
-          Werk do the rest! We're committed to helping you find your dream job
+          Werk do the rest! We&apos;re committed to helping you find your dream job
           and making the employment journey a seamless and enjoyable one.
         </div>
 
@@ -68,17 +68,19 @@ export default function Banner() {
         <div className="flex flex-col md:flex-row space-y-2 md:space-x-3 md:space-y-0 mt-6">
           <div className="w-40 bg-black rounded-md p-1 hover:scale-110">
             <a href="https://apps.apple.com/sg/app/werk-sg/id6445880985">
-              <img
+              <Image
                 className="object-cover"
                 src="https://download.werk.sg/assets/apple_store-f2829741.png"
+                alt="apple"
               />
             </a>
           </div>
           <div className="w-40 bg-black rounded-md p-1 hover:scale-110">
             <a href="https://play.google.com/store/apps/details?id=com.werkapp">
-              <img
+              <Image
                 className="object-cover"
                 src="https://download.werk.sg/assets/google-play-135af070.png"
+                alt="google"
               />
             </a>
           </div>

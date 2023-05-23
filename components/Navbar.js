@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Navbar() {
   return (
     <header class="supports-backdrop-blur:bg-background/60 sticky top-0 z-40 w-full bg-background/95 backdrop-blur-lg bg-transparent">
@@ -5,7 +7,7 @@ export default function Navbar() {
         <div>
           <div class="mr-4">
             <a class="mr-6 flex items-center space-x-2" href="/">
-              <img
+              <Image
                 className="w-20"
                 src="https://github.com/werksg/email_signature_pack/blob/main/werkLogo.png?raw=true"
                 alt="werk_logo"

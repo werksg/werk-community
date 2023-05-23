@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 export default function Blog() {
   return (
     <div className="">
       <a href="https://next-blog-sanity.vercel.app/">
-        <img
+        <Image
           className="mb-5 shadow-small hover:shadow-lg"
           src="https://images.pexels.com/photos/145683/pexels-photo-145683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="werkApp"
