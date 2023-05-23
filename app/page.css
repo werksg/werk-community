@@ -1,0 +1,24 @@
+.back-gradient {
+    /* background: hsla(199, 27%, 49%, 1);
+
+    background: radial-gradient(circle, hsla(199, 27%, 49%, 1) 0%, hsla(203, 26%, 66%, 1) 0%, hsla(203, 26%, 72%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -moz-radial-gradient(circle, hsla(199, 27%, 49%, 1) 0%, hsla(203, 26%, 66%, 1) 0%, hsla(203, 26%, 72%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -webkit-radial-gradient(circle, hsla(199, 27%, 49%, 1) 0%, hsla(203, 26%, 66%, 1) 0%, hsla(203, 26%, 72%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5C8A9F", endColorstr="#91ADBF", GradientType=1 ); */
+    background: hsla(203, 26%, 66%, 1);
+
+background: radial-gradient(circle, hsla(203, 26%, 66%, 1) 0%, hsla(193, 25%, 85%, 1) 0%, hsla(193, 25%, 85%, 1) 24%, hsla(0, 0%, 100%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(203, 26%, 66%, 1) 0%, hsla(193, 25%, 85%, 1) 0%, hsla(193, 25%, 85%, 1) 24%, hsla(0, 0%, 100%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(203, 26%, 66%, 1) 0%, hsla(193, 25%, 85%, 1) 0%, hsla(193, 25%, 85%, 1) 24%, hsla(0, 0%, 100%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#91ADBF", endColorstr="#D0DFE3", GradientType=1 );
+}
+
+.bottom-margin {
+    margin-bottom: 100px;
+}
