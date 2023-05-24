@@ -36,6 +36,21 @@ export default function RootLayout({ children }) {
       <meta property="og:image" content={metadata.image} />
       <meta property="og:description" content={metadata.description}/>
       </Head>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-1Z09C1VK7S"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1Z09C1VK7S');
+          `,
+        }}
+      ></script>
+
       <body className={`${inter.className} back-gradient`}>
         <Navbar />
         <main className="container">{children}</main>
