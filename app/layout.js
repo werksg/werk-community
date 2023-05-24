@@ -9,8 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
     default: "Werk",
-    description: "Werk Community",
-    image: "https://download.werk.sg/assets/werkApp-321478e1.svg",
   },
   robots: {
     index: true,
@@ -19,16 +17,17 @@ export const metadata = {
     "max-image-preview": "large",
     "max-snippet": -1,
   },
-  og: {
-    image: "https://download.werk.sg/assets/werkApp-321478e1.svg",
-  },
+  description: "Werk Community",
+  ogImage:"https://download.werk.sg/assets/werkApp-321478e1.svg",
+  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <meta property="og:image" content="https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/apple_store-button.png" />
+      <meta property="og:image" content={metadata.ogImage} />
+      <meta property="description" content={metadata.description}/>
       </Head>
       <body className={`${inter.className} back-gradient`}>
         <Navbar />
