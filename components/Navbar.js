@@ -26,7 +26,7 @@ export default function Navbar() {
           </a>
           <a
             class="text-foreground/60 transition-colors hover:text-foreground/80"
-            href="/Contact"
+            href="/#contact"
           >
             Contact
           </a>

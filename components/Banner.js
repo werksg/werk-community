@@ -22,7 +22,7 @@ export default function Banner() {
   }
 
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-1 md:h-screen">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:mb-1 md:h-full">
       <BaseDialog show={dialog} onClose={handleClosePopup}/>
       <div className="flex flex-row items-center justify-between md:order-last">
         <img

@@ -2,9 +2,10 @@ import "./page.css";
 import Banner from "../components/Banner"
 import Faq from "../components/FaqSection";
 
+
 export default function Home() {
   return (
-    <div className="h-screen ">
+    <div className="h-full ">
       <Banner></Banner>
       <Faq></Faq>
       {/* <h1 className="text-5xl md:text-6xl font-bold mb-10">Blog Posts</h1>
@@ -13,6 +14,7 @@ export default function Home() {
           <Blog></Blog>
           <Blog></Blog>
       </div> */}
+      
     </div>
   );
 }
