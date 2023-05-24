@@ -27,7 +27,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
+      <Head>
+      <meta property="og:image" content="https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/apple_store-button.png" />
+      </Head>
       <body className={`${inter.className} back-gradient`}>
         <Navbar />
         <main className="container">{children}</main>
