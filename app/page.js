@@ -2,6 +2,9 @@ import "./page.css";
 import Banner from "../components/Banner"
 import Faq from "../components/FaqSection";
 
+export const metadata ={
+  
+}
 
 export default function Home() {
   return (

@@ -17,8 +17,11 @@ export const metadata = {
     "max-image-preview": "large",
     "max-snippet": -1,
   },
-  description: "Werk Community",
-  image:"https://download.werk.sg/assets/werkApp-321478e1.svg",
+  openGraph: {
+    title: "Werk",
+    description: "Werk Community",
+    image: "https://download.werk.sg/assets/werkApp-321478e1.svg",
+  }
   
 };
 
@@ -26,8 +29,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <meta property="image" content={metadata.image} />
-      <meta property="description" content={metadata.description}/>
+      <meta property="og:image" content={metadata.image} />
+      <meta property="og:description" content={metadata.description}/>
       </Head>
       <body className={`${inter.className} back-gradient`}>
         <Navbar />
