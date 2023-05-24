@@ -20,7 +20,11 @@ export const metadata = {
   openGraph: {
     title: "Werk",
     description: "Werk Community",
-    image: "https://download.werk.sg/assets/werkApp-321478e1.svg",
+    images: {
+      url: "https://download.werk.sg/assets/werkApp-321478e1.svg",
+      width: 1920,
+      height: 1080,
+    },
   }
   
 };
