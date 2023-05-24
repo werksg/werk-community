@@ -18,7 +18,7 @@ export const metadata = {
     "max-snippet": -1,
   },
   description: "Werk Community",
-  ogImage:"https://download.werk.sg/assets/werkApp-321478e1.svg",
+  image:"https://download.werk.sg/assets/werkApp-321478e1.svg",
   
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <meta property="og:image" content={metadata.ogImage} />
+      <meta property="image" content={metadata.image} />
       <meta property="description" content={metadata.description}/>
       </Head>
       <body className={`${inter.className} back-gradient`}>
