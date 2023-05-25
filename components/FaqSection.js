@@ -2,7 +2,6 @@
 
 import SingleFaq from "./SingleFaq";
 
-import Link from "next/link";
 
 export default function Faq() {
   const list1 = [
@@ -49,15 +48,28 @@ export default function Faq() {
   ];
 
   return (
+    
     <div
-      id="faq"
-      className="py-6 w-full mx-auto grid grid-cols-1 md:grid-cols-2"
+      id=""
+      className="py-6 md:w-3/4 mx-auto"
     >
-      <div className="">
-        <h1 className="text-3xl font-semibold">
+      <h1 className="text-3xl font-semibold text-center">
           Frequently Asked Questions
         </h1>
-        <div className="mx-auto md:mx-0 glass-back rounded-lg w-full md:w-[342px] mt-6 min-h-[200px] p-6 flex flex-col justify-between ">
+      <div>
+        <ul className="space-y-6 lg:mt-10 md:mt-20">
+          {/* Render list1 messages */}
+          {list1.map((item, index) => (
+            <li key={index}>
+              {/* Render SingleFaq component with the message */}
+              <SingleFaq title={item.title} message={item.message}></SingleFaq>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="">
+        
+        {/* <div className="mx-auto md:mx-0 glass-back rounded-lg w-3/4 md:w-[342px] mt-6 min-h-[200px] p-6 flex flex-col justify-between ">
           <div>
             <div className="font-semibold text-xl" id="contact">Still have questions?</div>
             <div className="mt-14">
@@ -70,18 +82,7 @@ export default function Faq() {
           <div>
             
           </div>
-        </div>
-      </div>
-      <div>
-        <ul className="space-y-6 lg:mt-10 md:mt-20">
-          {/* Render list1 messages */}
-          {list1.map((item, index) => (
-            <li key={index}>
-              {/* Render SingleFaq component with the message */}
-              <SingleFaq title={item.title} message={item.message}></SingleFaq>
-            </li>
-          ))}
-        </ul>
+        </div> */}
       </div>
     </div>
   );

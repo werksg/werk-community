@@ -82,7 +82,7 @@ export default function Banner() {
                 className="object-cover"
                 src="https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/google-play-button.png"
                 alt="google"
-                
+                id="faq"
               />
             </a>
           </div>

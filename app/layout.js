@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
-
+import Footer from "../components/Footer";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -55,6 +55,9 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} back-gradient`}>
         <Navbar />
         <main className="container">{children}</main>
+      <footer id="contact" className="border-t border-gray-400 h-24 pl-12 py-6 werk-lighterblue text-white">
+          Contact us: support@werk.sg
+      </footer>
       </body>
       
     </html>
