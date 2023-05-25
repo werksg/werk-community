@@ -65,7 +65,7 @@ export default function Banner() {
           <span className="hover:underline">Play Video</span>
         </button>
 
-        <div className="flex flex-col md:flex-row space-y-2 md:space-x-3 md:space-y-0 mt-6">
+        <div className="flex flex-col sm:flex-row space-y-2 sm:space-x-3 sm:space-y-0 mt-6">
           <div className="w-40 bg-black rounded-md p-1 hover:scale-110">
             <a href="https://apps.apple.com/sg/app/werk-sg/id6445880985">
               <img

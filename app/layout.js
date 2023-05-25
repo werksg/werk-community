@@ -35,7 +35,6 @@ export default function RootLayout({ children }) {
       <Head>
       <meta property="og:image" content={metadata.image} />
       <meta property="og:description" content={metadata.description}/>
-      </Head>
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-1Z09C1VK7S"
@@ -50,6 +49,8 @@ export default function RootLayout({ children }) {
           `,
         }}
       ></script>
+      </Head>
+      
 
       <body className={`${inter.className} back-gradient`}>
         <Navbar />

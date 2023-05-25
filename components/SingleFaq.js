@@ -17,7 +17,7 @@ export default function SingleFaq(props) {
   };
 
   return (
-    <div className="border-b h-fit my-6 mr-6">
+    <div className="border-b border-gray-400 h-fit my-6 mx-6">
       <button
         className="flex flex-row justify-center justify-between h-full w-full items-center"
         onClick={handleClick}

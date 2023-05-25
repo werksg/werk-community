@@ -54,10 +54,10 @@ export default function Faq() {
       className="py-6 w-full mx-auto grid grid-cols-1 md:grid-cols-2"
     >
       <div className="">
-        <h1 className="text-3xl font-semibold mt-6">
+        <h1 className="text-3xl font-semibold">
           Frequently Asked Questions
         </h1>
-        <div className="glass-back rounded-lg mt-6 w-3/4 min-h-[200px] p-6 flex flex-col justify-between">
+        <div className="mx-auto md:mx-0 glass-back rounded-lg w-full md:w-[342px] mt-6 min-h-[200px] p-6 flex flex-col justify-between ">
           <div>
             <div className="font-semibold text-xl" id="contact">Still have questions?</div>
             <div className="mt-14">
@@ -73,7 +73,7 @@ export default function Faq() {
         </div>
       </div>
       <div>
-        <ul className="space-y-6">
+        <ul className="space-y-6 lg:mt-10 md:mt-20">
           {/* Render list1 messages */}
           {list1.map((item, index) => (
             <li key={index}>
