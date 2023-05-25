@@ -59,7 +59,7 @@ export default function Faq() {
         </h1>
         <div className="glass-back rounded-lg mt-6 w-3/4 min-h-[200px] p-6 flex flex-col justify-between">
           <div>
-            <div className="font-semibold text-xl">Still have questions?</div>
+            <div className="font-semibold text-xl" id="contact">Still have questions?</div>
             <div className="mt-14">
               <p className="font-semibold">Contact Us: </p>
               <ul>
