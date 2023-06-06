@@ -19,47 +19,51 @@ export const metadata = {
   },
   openGraph: {
     title: "Werk",
-    description: "Werk Community",
+    description: "An Employment App To Link Them All",
     images: {
       url: "https://download.werk.sg/assets/werkApp-321478e1.svg",
       width: 1920,
       height: 1080,
     },
-  }
-  
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <meta property="og:image" content={metadata.image} />
-      <meta property="og:description" content={metadata.description}/>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-1Z09C1VK7S"
-      ></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images.url} />
+        <meta property="og:image:width" content={metadata.openGraph.images.width} />
+        <meta property="og:image:height" content={metadata.openGraph.images.height} />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1Z09C1VK7S"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-1Z09C1VK7S');
           `,
-        }}
-      ></script>
+          }}
+        ></script>
       </Head>
-      
 
       <body className={`${inter.className} back-gradient`}>
         <Navbar />
         <main className="container">{children}</main>
-      <footer id="contact" className="border-t border-gray-400 h-24 pl-12 py-6 werk-lighterblue text-white">
+        <footer
+          id="contact"
+          className="border-t border-gray-400 h-24 pl-12 py-6 werk-lighterblue text-white"
+        >
           Contact us: support@werk.sg
-      </footer>
+        </footer>
       </body>
-      
     </html>
   );
 }
+
