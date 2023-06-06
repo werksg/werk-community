@@ -18,12 +18,12 @@ export const metadata = {
     "max-snippet": -1,
   },
   openGraph: {
-    title: "Werk",
-    description: "An Employment App To Link Them All",
+    title: "Join me on Werk",
+    description: "An Employment App To Link Them All. First local freelance marketplace connecting employers, freelancers, part-timers and individuals.",
     images: {
-      url: "https://download.werk.sg/assets/werkApp-321478e1.svg",
-      width: 1920,
-      height: 1080,
+      url: "https://insta-werk-app.s3.ap-northeast-1.amazonaws.com/Test1.png",
+      width: 1200,
+      height: 630,
     },
   },
 };
